@@ -17,7 +17,7 @@ app = FastAPI(title="Security Scanner Backend", version="0.1.0")
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://frontend:3000"],
+    allow_origins=["http://localhost:3000", "http://frontend:3000", "http://172.201.157.195/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
